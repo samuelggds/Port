@@ -1,0 +1,43 @@
+Logos das tecnologias: Devicon, variantes originais em SVG.
+https://github.com/devicons/devicon
+Os nomes e logos pertencem aos respectivos titulares e identificam as tecnologias utilizadas. Não representam endosso.
+
+Fonte: Manrope, SIL Open Font License 1.1.
+https://github.com/google/fonts/tree/main/ofl/manrope
+
+Retrato: Samuel Gomes, imagem do portfólio original.
+https://github.com/samuelggds/Port/blob/master/images/samuel%20gomes.jpg
+
+CAPTURAS DAS INTERFACES — assets/screenshots/ (10 imagens)
+
+As imagens são capturas reais das interfaces em ambiente de demonstração. Os nomes, valores, clientes, estoques e indicadores exibidos são dados fictícios de apresentação, não evidências de receita, usuários ou operação em produção.
+
+GastroNexa — 4 capturas disponíveis no repositório original, em docs/assets/screenshots/.
+Repositório: https://github.com/samuelggds/Projeto-Restaurants
+As capturas são produzidas pela aplicação com dados de demonstração; o repositório inclui o fluxo Playwright em frontend/e2e/readme-real-ui.spec.ts e o helper frontend/e2e/helpers/readmeScreenshot.ts.
+
+- gastronexa-customer-menu.png — Cardápio digital.
+  Origem: https://github.com/samuelggds/Projeto-Restaurants/blob/main/docs/assets/screenshots/customer-menu.png
+- gastronexa-admin-dashboard.png — Painel administrativo.
+  Origem: https://github.com/samuelggds/Projeto-Restaurants/blob/main/docs/assets/screenshots/admin-dashboard.png
+- gastronexa-kitchen-dashboard.png — Operação da cozinha.
+  Origem: https://github.com/samuelggds/Projeto-Restaurants/blob/main/docs/assets/screenshots/kitchen-dashboard.png
+- gastronexa-waiter-dashboard.png — Atendimento e mesas.
+  Origem: https://github.com/samuelggds/Projeto-Restaurants/blob/main/docs/assets/screenshots/waiter-dashboard.png
+
+MG Orçamentos — 3 capturas realizadas localmente a partir dos componentes originais do projeto, com fixtures fictícias e sem acesso ao banco de produção.
+Repositório: https://github.com/samuelggds/Project-Budget
+
+- mg-historico.jpg — Histórico de orçamentos.
+- mg-novo.jpg — Criação de propostas.
+- mg-clientes.jpg — Cadastro de clientes.
+
+SaaS de Orçamentos — 3 capturas realizadas localmente a partir dos componentes originais do projeto, com fixtures fictícias e sem acesso ao banco de produção.
+Repositório: https://github.com/samuelggds/Projeto-Budget-2
+
+- saas-financeiro.jpg — Painel financeiro.
+- saas-estoque.jpg — Gestão de estoque.
+- saas-novo.jpg — Criação de orçamentos.
+
+As interfaces e os projetos apresentados são de Samuel Gomes. As transformações de perspectiva 3D pertencem à apresentação do portfólio e não alteram a origem das capturas.
+

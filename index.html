@@ -3,111 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0c1424">
-  <meta name="description" content="Portfólio de Samuel Gomes. Desenvolvedor Full Stack com projetos SaaS em React, TypeScript, Node.js, Express, PostgreSQL e Prisma.">
+  <meta name="theme-color" content="#f4f5f6">
+  <meta name="description" content="Samuel Gomes, desenvolvedor Full Stack em Fortaleza. Conheça meus projetos com React, TypeScript, Node.js e PostgreSQL: GastroNexa, MG Orçamentos e SaaS de Orçamentos.">
+  <title>Samuel Gomes — Código, ideias & experiências</title>
+  <meta property="og:title" content="Samuel Gomes — Desenvolvedor Full Stack">
+  <meta property="og:description" content="Ideias bem construídas. Do primeiro componente à aplicação completa. Conheça meus projetos.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Samuel Gomes | Desenvolvedor Full Stack">
-  <meta property="og:description" content="Projetos de software com React, Node.js, PostgreSQL, autenticação, pagamentos, multi-tenancy e testes.">
-  <title>Samuel Gomes | Desenvolvedor Full Stack</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/manrope-bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#principal">Pular para o conteúdo</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="Samuel Gomes - início">SG<span>.</span> <small>Samuel Gomes</small></a>
-      <nav aria-label="Navegação principal"><a href="#projetos">Projetos</a><a href="#stack">Stack</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
-    </div>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header id="site-header" class="site-header">
+    <a class="brand" href="#inicio" aria-label="Samuel Gomes, início"><span class="monogram">sg<span class="brand-dot">.</span></span><span class="brand-name">Samuel Gomes<small>Desenvolvedor Full Stack</small></span></a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos <sup>03</sup></a><a href="#sobre">Sobre mim</a><a href="#stack">Stack</a><a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
-  <main id="principal">
-    <section id="inicio" class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> Desenvolvedor Full Stack · Fortaleza, CE · Remoto Brasil</p>
-        <h1>Desenvolvo software <span>do problema à solução.</span></h1>
-        <p class="lead">Aplicações web com <strong>React, TypeScript, Node.js e PostgreSQL</strong>, integrando interface, APIs, banco de dados, segurança e implantação.</p>
-        <p class="muted">Construí uma plataforma SaaS para restaurantes e soluções de gestão empresarial. Aqui você encontra as decisões técnicas, o código e o contexto de cada projeto.</p>
-        <div class="actions">
-          <a class="button button-primary" href="#projetos">Conhecer projetos <span aria-hidden="true">↘</span></a>
-          <a class="button button-outline" href="https://github.com/samuelggds" target="_blank" rel="noopener noreferrer">Meu GitHub <span aria-hidden="true">↗</span></a>
+  <main id="main">
+    <section id="inicio" class="hero page-wrap">
+      <div class="hero-topline"><span class="eyebrow"><span class="status-dot"></span> DESENVOLVEDOR FULL STACK</span><span class="edition">FORTALEZA, BR <span aria-hidden="true">↗</span></span></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Ideias em código.<br>Experiências<br><span class="muted-heading">de verdade.</span></h1>
+          <p>Olá, sou Samuel. Desenvolvo aplicações que conectam uma boa experiência a uma base técnica sólida.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#projetos">Explore meus projetos <span class="button-arrow" aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/samuelggds" target="_blank" rel="noopener noreferrer">Meu GitHub <span aria-hidden="true">↗</span></a></div>
         </div>
-        <div class="chips"><span>SaaS multi-tenant</span><span>APIs REST</span><span>Pagamentos</span><span>Testes e CI/CD</span></div>
-      </div>
-      <div class="tech-panel" aria-label="Etapas do desenvolvimento">
-        <div class="panel-bar"><i></i><i></i><i></i><span>DO FRONTEND À ENTREGA</span></div>
-        <div class="tech-steps">
-          <div><b>01</b><span><strong>Frontend</strong><small>React · TypeScript</small></span></div>
-          <div><b>02</b><span><strong>Backend</strong><small>Node.js · Express · APIs REST</small></span></div>
-          <div><b>03</b><span><strong>Dados e segurança</strong><small>PostgreSQL · Prisma · Controle de acesso</small></span></div>
-          <div><b>04</b><span><strong>Qualidade e implantação</strong><small>Docker · GitHub Actions · AWS</small></span></div>
+        <div class="hero-art">
+          <div class="art-label"><span class="tiny-cross" aria-hidden="true">+</span> MINHA STACK EM MOVIMENTO <span>001</span></div>
+          <div class="orb-stage"><canvas id="orb" tabindex="0" role="img" aria-label="TypeScript em 3D. Selecione uma tecnologia ao redor. Arraste com o mouse ou use as setas para girar. Home restaura a posição."></canvas><div id="stack-orbit" class="stack-orbit" role="group" aria-label="Selecionar tecnologia em destaque"></div><div class="orb-shadow" aria-hidden="true"></div></div>
+          <div class="selected-stack"><span id="active-stack-label" aria-live="polite">TypeScript</span><span>SELECIONE UMA TECNOLOGIA AO REDOR</span></div><div class="art-bottom"><span><span class="drag-icon" aria-hidden="true">↔</span> Arraste para explorar</span><button id="motion-toggle" type="button" aria-pressed="true"><span class="pause-icon" aria-hidden="true">Ⅱ</span> <span data-motion-label>Pausar movimento</span></button></div>
         </div>
-        <p>Os repositórios incluem documentação, testes e exemplos de decisões de arquitetura.</p>
       </div>
+      <div class="hero-foot"><span>DA INTERFACE À ARQUITETURA.<br>DO CÓDIGO À ENTREGA.</span><a href="#projetos" aria-label="Rolar para os projetos"><span>SCROLL PARA EXPLORAR</span><span class="scroll-circle" aria-hidden="true">↓</span></a></div>
     </section>
-    <section class="section project-section" id="projetos">
-      <div class="container">
-        <div class="section-head"><div><p class="overline">PORTFÓLIO SELECIONADO</p><h2>Projetos que demonstram <span>minha atuação.</span></h2></div><p>Problemas reais, soluções desenvolvidas e evidências que podem ser examinadas no código.</p></div>
-        <article class="featured">
-          <div class="featured-text">
-            <p class="overline">01 / PROJETO INDEPENDENTE · SAAS</p>
-            <h3>GastroNexa</h3>
-            <p class="subtitle">Plataforma multi-restaurante para cardápio, pedidos, mesas e delivery.</p>
-            <p>Desenvolvimento de interfaces e APIs, autenticação JWT, permissões, isolamento de dados por restaurante, integração de pagamentos e comunicação em tempo real.</p>
-            <ul class="proof">
-              <li><strong>Arquitetura:</strong> React, Node.js, Express, TypeScript, PostgreSQL e Prisma</li>
-              <li><strong>Regras críticas:</strong> multi-tenancy, webhooks, consistência e confirmações de pagamento</li>
-              <li><strong>Qualidade:</strong> testes automatizados, Playwright, Docker e GitHub Actions</li>
-            </ul>
-            <div class="text-links"><a href="https://github.com/samuelggds/Projeto-Restaurants" target="_blank" rel="noopener noreferrer">Código ↗</a><a href="https://github.com/samuelggds/Projeto-Restaurants/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener noreferrer">Arquitetura ↗</a><a href="https://www.gastronexa.com.br/" target="_blank" rel="noopener noreferrer">Site do produto ↗</a></div>
+    <div class="stack-ribbon" aria-label="Principais tecnologias"><div class="ribbon-inner"><span>React <b>·</b></span><span>TypeScript <b>·</b></span><span>Node.js <b>·</b></span><span>PostgreSQL <b>·</b></span><span>Docker <b>·</b></span><span>AWS <b>·</b></span></div></div>
+    <section id="projetos" class="projects section-space page-wrap">
+      <div class="section-heading reveal"><div><p class="eyebrow section-number">01 / TRABALHOS SELECIONADOS</p><h2>Do problema<br>ao <span class="serif-word">projeto.</span></h2></div><p>Uma seleção do que venho construindo.<br>Produtos reais, decisões técnicas e<br>aprendizado em cada entrega.</p></div>
+      <div class="project-toolbar reveal"><div class="filters" role="group" aria-label="Filtrar projetos"><button type="button" class="is-active" data-filter="all" aria-pressed="true">Todos <span>03</span></button><button type="button" data-filter="saas" aria-pressed="false">SaaS</button><button type="button" data-filter="management" aria-pressed="false">Gestão</button></div><span class="project-index">SELEÇÃO / 2026</span></div>
+      <p id="filter-status" class="sr-only" role="status" aria-live="polite">3 projetos exibidos.</p>
+      <div class="project-grid">
+        <article class="project-card project-feature reveal" data-category="saas">
+          <div class="feature-copy"><span class="project-label">01 — SAAS PARA RESTAURANTES</span><h3>GastroNexa</h3><p>Uma operação inteira.<br>Uma experiência conectada.</p><p class="project-description">Do cardápio ao delivery: uma plataforma multi-restaurante para pedidos, mesas, cozinha e pagamentos.</p><div class="tag-row"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div><button class="project-open" data-project="gastronexa" type="button">Conhecer o projeto <span aria-hidden="true">↗</span></button></div>
+          <div class="feature-visual gallery" data-gallery="gastronexa" aria-roledescription="galeria de imagens">
+            <div class="gallery-eyebrow">INTERFACE REAL / PRÉVIA 3D</div>
+            <div class="gallery-window"><div class="window-chrome"><span><i></i><i></i><i></i></span><span>GastroNexa</span><span aria-hidden="true">↗</span></div>
+            <button type="button" class="gallery-expand" aria-label="Ampliar imagens de GastroNexa"><img class="gallery-image" src="assets/screenshots/gastronexa-customer-menu.png" alt="GastroNexa: Cardápio digital, em ambiente de demonstração" width="1440" height="960" loading="lazy"><span class="expand-icon" aria-hidden="true">⤢</span></button></div>
+            <div class="gallery-meta"><span class="gallery-title">Cardápio digital</span><span class="gallery-counter" aria-live="polite">01 / 04</span></div>
+            <div class="gallery-nav"><button type="button" class="gallery-prev" aria-label="Imagem anterior de GastroNexa">←</button><div class="gallery-dots" role="group" aria-label="Escolher imagem de GastroNexa"></div><button type="button" class="gallery-next" aria-label="Próxima imagem de GastroNexa">→</button></div>
+            <p class="gallery-note">Capturas da aplicação · dados de demonstração</p>
           </div>
-          <figure>
-            <img loading="lazy" src="https://raw.githubusercontent.com/samuelggds/samuelggds/main/portfolio/assets/gastronexa-home.png" alt="Prévia de telas da GastroNexa no Figma para celular e desktop">
-            <figcaption>Prévia de interface exportada do Figma; não é uma captura de produção.</figcaption>
-          </figure>
         </article>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="card-top"><span>02</span><small>APLICAÇÃO EMPRESARIAL</small></div>
-            <div class="symbol" aria-hidden="true">MG<span>/</span></div>
-            <h3>MG Orçamentos</h3>
-            <p>Solução para organizar clientes, serviços, estoque, orçamentos, PDFs e comunicação por e-mail no contexto da MG Refrigerações.</p>
-            <p class="stack-line"><strong>Stack:</strong> React, TypeScript, Supabase, PostgreSQL, AWS e Resend.</p>
-            <div class="text-links"><a href="https://github.com/samuelggds/Project-Budget" target="_blank" rel="noopener noreferrer">Código ↗</a><a href="https://github.com/samuelggds/samuelggds/blob/main/portfolio/mg-orcamentos.md" target="_blank" rel="noopener noreferrer">Estudo de caso ↗</a></div>
-            <small class="note">O site institucional da empresa não é uma demonstração pública deste sistema.</small>
-          </article>
-          <article class="project-card">
-            <div class="card-top"><span>03</span><small>PROJETO INDEPENDENTE</small></div>
-            <div class="symbol" aria-hidden="true">S<span>aa</span>S</div>
-            <h3>SaaS de Orçamentos</h3>
-            <p>Aplicação com estoque, orçamentos, documentos PDF, perfis de acesso e assinaturas com cobrança Pix e regras de bloqueio.</p>
-            <p class="stack-line"><strong>Stack:</strong> React, TypeScript, Supabase, Edge Functions, Mercado Pago e Vitest.</p>
-            <div class="text-links"><a href="https://github.com/samuelggds/Projeto-Budget-2" target="_blank" rel="noopener noreferrer">Código ↗</a><a href="https://github.com/samuelggds/samuelggds/blob/main/portfolio/orcamentos.md" target="_blank" rel="noopener noreferrer">Estudo de caso ↗</a></div>
-          </article>
-        </div>
+        <article class="project-card reveal" data-category="management">
+          <div class="project-visual mg-visual gallery" data-gallery="mg" aria-roledescription="galeria de imagens">
+            <div class="gallery-eyebrow">INTERFACE REAL / PRÉVIA 3D</div>
+            <div class="gallery-window"><div class="window-chrome"><span><i></i><i></i><i></i></span><span>MG Orçamentos</span><span aria-hidden="true">↗</span></div>
+            <button type="button" class="gallery-expand" aria-label="Ampliar imagens de MG Orçamentos"><img class="gallery-image" src="assets/screenshots/mg-historico.jpg" alt="MG Orçamentos: Histórico de orçamentos, em ambiente de demonstração" width="1440" height="960" loading="lazy"><span class="expand-icon" aria-hidden="true">⤢</span></button></div>
+            <div class="gallery-meta"><span class="gallery-title">Histórico de orçamentos</span><span class="gallery-counter" aria-live="polite">01 / 03</span></div>
+            <div class="gallery-nav"><button type="button" class="gallery-prev" aria-label="Imagem anterior de MG Orçamentos">←</button><div class="gallery-dots" role="group" aria-label="Escolher imagem de MG Orçamentos"></div><button type="button" class="gallery-next" aria-label="Próxima imagem de MG Orçamentos">→</button></div>
+            <p class="gallery-note">Capturas da aplicação · dados de demonstração</p>
+          </div>
+          <div class="project-info"><div class="project-title-row"><div><span class="project-label">02 — GESTÃO EMPRESARIAL</span><h3>MG Orçamentos</h3></div><button class="round-link" data-project="mg" type="button" aria-label="Conhecer MG Orçamentos">↗</button></div><p>Clientes, serviços e propostas em um fluxo integrado, com geração de PDFs e envio por e-mail.</p><div class="tag-row"><span>React</span><span>Supabase</span><span>AWS</span></div></div>
+        </article>
+        <article class="project-card reveal" data-category="saas">
+          <div class="project-visual budget-visual gallery" data-gallery="budget" aria-roledescription="galeria de imagens">
+            <div class="gallery-eyebrow">INTERFACE REAL / PRÉVIA 3D</div>
+            <div class="gallery-window"><div class="window-chrome"><span><i></i><i></i><i></i></span><span>SaaS de Orçamentos</span><span aria-hidden="true">↗</span></div>
+            <button type="button" class="gallery-expand" aria-label="Ampliar imagens de SaaS de Orçamentos"><img class="gallery-image" src="assets/screenshots/saas-financeiro.jpg" alt="SaaS de Orçamentos: Painel financeiro, em ambiente de demonstração" width="1440" height="960" loading="lazy"><span class="expand-icon" aria-hidden="true">⤢</span></button></div>
+            <div class="gallery-meta"><span class="gallery-title">Painel financeiro</span><span class="gallery-counter" aria-live="polite">01 / 03</span></div>
+            <div class="gallery-nav"><button type="button" class="gallery-prev" aria-label="Imagem anterior de SaaS de Orçamentos">←</button><div class="gallery-dots" role="group" aria-label="Escolher imagem de SaaS de Orçamentos"></div><button type="button" class="gallery-next" aria-label="Próxima imagem de SaaS de Orçamentos">→</button></div>
+            <p class="gallery-note">Capturas da aplicação · dados de demonstração</p>
+          </div>
+          <div class="project-info"><div class="project-title-row"><div><span class="project-label">03 — SOFTWARE COMO SERVIÇO</span><h3>SaaS de Orçamentos</h3></div><button class="round-link" data-project="budget" type="button" aria-label="Conhecer SaaS de Orçamentos">↗</button></div><p>Gestão de orçamentos com estoque, assinaturas e Pix. Um projeto pessoal de ponta a ponta.</p><div class="tag-row"><span>TypeScript</span><span>Supabase</span><span>Mercado Pago</span></div></div>
+        </article>
       </div>
+      <a class="github-more text-link reveal" href="https://github.com/samuelggds?tab=repositories" target="_blank" rel="noopener noreferrer">Mais código, experimentos e ideias no GitHub <span aria-hidden="true">↗</span></a>
     </section>
-    <section class="section" id="stack">
-      <div class="container">
-        <div class="section-head"><div><p class="overline">TECNOLOGIAS E PRÁTICA</p><h2>Stack aplicada <span>em projetos.</span></h2></div><p>Ferramentas e conceitos utilizados no desenvolvimento das aplicações apresentadas.</p></div>
-        <div class="skill-grid">
-          <div><small>01 / FRONTEND</small><h3>Interfaces</h3><p>React, TypeScript, JavaScript, Vite, Styled Components, HTML e CSS</p></div>
-          <div><small>02 / BACKEND</small><h3>APIs e negócio</h3><p>Node.js, Express, REST, JWT, webhooks e Socket.IO</p></div>
-          <div><small>03 / DADOS</small><h3>Persistência</h3><p>PostgreSQL, Prisma, Supabase, RLS, RBAC e multi-tenancy</p></div>
-          <div><small>04 / QUALIDADE</small><h3>Entrega</h3><p>Docker, AWS, GitHub Actions, CI/CD, Vitest e Playwright</p></div>
-        </div>
-      </div>
+    <section id="sobre" class="about-section section-space">
+      <div class="page-wrap about-grid"><div class="about-portrait reveal"><img src="assets/samuel-gomes.jpg" alt="Samuel Gomes observando a paisagem natural" width="753" height="781" loading="lazy"><div class="portrait-caption"><span>SAMUEL GOMES</span><span>FORTALEZA, CE ↗</span></div></div><div class="about-copy reveal"><p class="eyebrow section-number">02 / POR TRÁS DO CÓDIGO</p><h2>Curiosidade para criar.<br>Cuidado para<br><span class="serif-word">construir.</span></h2><p>Sou Samuel Gomes, desenvolvedor Full Stack em Fortaleza. Gosto de entender o problema inteiro — e transformar essa compreensão em uma aplicação que faz sentido para quem usa.</p><p>Atuo da interface ao banco de dados, passando por APIs, segurança e implantação. Hoje, conduzo a arquitetura e o desenvolvimento da GastroNexa e construo soluções de gestão.</p><div class="about-facts"><div><span>FORMAÇÃO</span><strong>Desenvolvimento Full Stack</strong><small>DevClub · Curso livre concluído</small></div><div><span>ONDE ATUO</span><strong>Fortaleza, Brasil</strong><small>Aberto a oportunidades remotas</small></div></div><a class="text-link" href="https://www.linkedin.com/in/samuel-gomes08/" target="_blank" rel="noopener noreferrer">Um pouco mais sobre minha trajetória <span aria-hidden="true">↗</span></a></div></div>
     </section>
-    <section class="section about-section" id="sobre">
-      <div class="container about-grid">
-        <div><p class="overline">SOBRE MIM</p><h2>Autonomia técnica, <span>com foco no negócio.</span></h2></div>
-        <div><p>Sou Desenvolvedor Full Stack e desenvolvo aplicações de ponta a ponta. Na GastroNexa, um produto independente, conduzo decisões de implementação e arquitetura, do frontend às integrações e infraestrutura.</p><p>Valorizo separação de responsabilidades, segurança, testes proporcionais ao risco e documentação. Quero aplicar essa experiência em uma equipe de desenvolvimento e continuar evoluindo.</p><div class="education"><small>FORMAÇÃO COMPLEMENTAR</small><strong>DevClub — Formação em Desenvolvimento Full Stack</strong><span>Curso livre concluído; não equivale a graduação superior.</span></div></div>
-      </div>
-    </section>
-    <section class="section contact-section" id="contato">
-      <div class="container contact-content"><p class="overline">ENTRE EM CONTATO</p><h2>Vamos construir <span>algo relevante.</span></h2><p>Aberto a oportunidades remotas de Desenvolvimento Full Stack e Backend no Brasil.</p>
-        <div class="actions"><a class="button button-primary" href="mailto:accyt2@hotmail.com?subject=Oportunidade%20em%20desenvolvimento">Enviar e-mail ↗</a><a class="button button-outline" href="https://www.linkedin.com/in/samuel-gomes08/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
-      </div>
-    </section>
+    <section id="stack" class="stack-section section-space page-wrap"><div class="section-heading reveal"><div><p class="eyebrow section-number">03 / FERRAMENTAS & POSSIBILIDADES</p><h2>Da primeira linha<br>à última <span class="serif-word">entrega.</span></h2></div><p>Uma stack que conecta experiência,<br>dados e infraestrutura.</p></div><div class="stack-list"><div class="stack-row reveal"><span class="stack-number">01</span><h3>Interfaces</h3><p>React <span>·</span> TypeScript <span>·</span> HTML & CSS</p><span class="stack-symbol" aria-hidden="true">↗</span></div><div class="stack-row reveal"><span class="stack-number">02</span><h3>APIs & lógica</h3><p>Node.js <span>·</span> Express <span>·</span> APIs REST</p><span class="stack-symbol" aria-hidden="true">{ }</span></div><div class="stack-row reveal"><span class="stack-number">03</span><h3>Dados & acesso</h3><p>PostgreSQL <span>·</span> Prisma <span>·</span> Supabase</p><span class="stack-symbol" aria-hidden="true">⊞</span></div><div class="stack-row reveal"><span class="stack-number">04</span><h3>Qualidade & deploy</h3><p>Docker <span>·</span> AWS <span>·</span> GitHub Actions <span>·</span> Vitest</p><span class="stack-symbol" aria-hidden="true">·</span></div></div></section>
+    <section id="contato" class="contact-section"><div class="page-wrap"><div class="contact-top"><span class="eyebrow"><span class="status-dot"></span> VAMOS CONSTRUIR ALGO JUNTOS?</span></div><a href="mailto:accyt2@hotmail.com" class="contact-title">Sua próxima ideia<br>começa com um <span class="serif-word">olá.</span><span class="contact-arrow" aria-hidden="true">↗</span></a><div class="contact-bottom"><div><a class="email-link" data-email-address href="mailto:accyt2@hotmail.com">accyt2@hotmail.com</a><button id="copy-email" class="copy-email" type="button" aria-label="Copiar endereço de e-mail"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h4"/></svg></button><span id="copy-status" class="copy-status" role="status" aria-live="polite"></span></div><div class="contact-social"><a href="https://github.com/samuelggds" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/samuel-gomes08/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div><footer><span>© 2026 Samuel Gomes</span><span>Feito com intenção. Construído em código.</span><a href="#inicio">Voltar ao topo ↑</a></footer></div></section>
   </main>
-  <footer><div class="container footer-inner"><span>© 2026 Samuel Gomes</span><span>React · Node.js · TypeScript</span><a href="https://github.com/samuelggds" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><button id="dialog-close" type="button" aria-label="Fechar detalhes do projeto">✕</button><p id="dialog-kicker" class="eyebrow"></p><h2 id="dialog-title"></h2><p id="dialog-description" class="dialog-description"></p><div id="dialog-stack" class="tag-row"></div><ul id="dialog-details"></ul><div class="dialog-links"><a id="dialog-repo" class="button button-dark" target="_blank" rel="noopener noreferrer">Ver código no GitHub ↗</a><a id="dialog-demo" class="text-link" target="_blank" rel="noopener noreferrer">Visitar o produto ↗</a></div></div></dialog>
+  <dialog id="gallery-dialog" class="gallery-dialog" aria-labelledby="gallery-dialog-title">
+    <div class="lightbox-header"><div><span class="eyebrow">TELAS DO PROJETO</span><h2 id="gallery-dialog-title"></h2></div><button id="gallery-close" type="button" aria-label="Fechar galeria">✕</button></div>
+    <div class="lightbox-stage"><button id="lightbox-prev" type="button" aria-label="Imagem anterior ampliada">←</button><img id="lightbox-image" alt=""><button id="lightbox-next" type="button" aria-label="Próxima imagem ampliada">→</button></div>
+    <div class="lightbox-bottom"><span id="lightbox-caption" aria-live="polite"></span><span id="lightbox-count"></span></div><p class="lightbox-note">Interface real da aplicação em ambiente de demonstração. Use as setas para navegar e Esc para fechar.</p>
+  </dialog>
 </body>
 </html>
